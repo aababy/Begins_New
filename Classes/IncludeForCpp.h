@@ -9,13 +9,24 @@
 #pragma once
 
 #include "cocos2d.h"
+#include "cocostudio/CocoStudio.h"
+#include "ui/UIHelper.h"
+#include "ui/UILayout.h"
+#include "ui/UIButton.h"
+#include "ui/UIText.h"
+#include "ui/UIScrollView.h"
+#include "ui/UIImageView.h"
+#include "ui/UITextField.h"
+#include "ui/UICheckBox.h"
+#include "ui/UIListView.h"
+#include "ui/UILoadingBar.h"
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 #include "platform/android/jni/JniHelper.h"
 #endif
 
 //#include "Clock.h"
-//#include "Tool.h"
+#include "Tool.h"
 #include "Database.h"
 //#include "MissionPool.h"
 //#include "Mission.h"
@@ -32,5 +43,6 @@
 //#include "DetailScene.h"
 //#include "FrequencyScene.h"
 
-
 using namespace cocos2d;
+using namespace cocostudio::timeline;
+

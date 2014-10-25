@@ -11,10 +11,9 @@
 #include <string>
 #include <vector>
 #include "cocos2d.h"
-#include "ui/CocosGUI.h"                                                //cocos studio ui
+#include "ui/UIWidget.h"                                               //cocos studio ui
 
 //暂时禁止使用新的 using namespace
-using namespace cocos2d::ui;
 using std::string;
 using std::vector;
 using cocos2d::Ref;
@@ -24,6 +23,39 @@ using cocos2d::Scene;
 using cocos2d::Director;
 using cocos2d::Point;
 using cocos2d::Label;
+
+//////////////////////////////////////////////////  前置声明
+
+namespace cocos2d {
+namespace ui {
+    class Button;
+    class ImageView;
+    class Text;
+    class TextField;
+    class ScrollView;
+    class Layout;
+    class LoadingBar;
+	class ListView;
+    class CheckBox;
+    class ListView;
+}
+    
+namespace extension {
+    class EditBox;
+    class EditBoxDelegate;
+}
+}
+
+namespace game_event {
+    class event_dispatch;
+}
+
+enum class TouchEventType;
+
+using namespace cocos2d;
+using namespace ui;
+using extension::EditBox;
+using extension::EditBoxDelegate;
 
 ////////////////////////////////////////////////////////////////////////// 全局
 #define	IN_WINDOWS              0
