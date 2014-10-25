@@ -17,6 +17,7 @@ protected:
     void selectedItemEvent(Ref *pSender, ListViewEventType type);
     // a selector callback
     //void menuCloseCallback(Ref* pSender, TouchEventType type);
+    void onButton(Ref *pSender, Widget::TouchEventType type);
     
 protected:
     Layout* _widget;

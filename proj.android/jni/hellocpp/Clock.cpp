@@ -33,7 +33,7 @@ bool Clock::checkMission()
 Clock::Clock()
 {
 	_pool = xMissionPool;
-	startTiming();
+	//startTiming();
 }
 
 
@@ -41,27 +41,47 @@ Clock::~Clock(void)
 {
 }
 
-
 void Clock::startTiming()
 {
-	return;
+	CCLOG("startTiming");
+	cocos2d::JniMethodInfo methodInfo;
 
-    JniMethodInfo methodInfo;
-    jobject jobj;
 
-    bool isHave = JniHelper::getStaticMethodInfo(methodInfo,
-    		"org/cocos2dx/cpp/AppActivity", "getActivity", "()Ljava/lang/Object;");
+	  if (!JniHelper::getStaticMethodInfo(methodInfo, "org/cocos2dx/cpp/AppActivity",
+			  "showLocalNotification", "(Ljava/lang/String;II)V"))
+	  {
+	    return;
+	  }
 
-    if (isHave)
-    {
-        jobj = methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID);
-        
-        isHave = JniHelper::getMethodInfo(methodInfo,
-        		"org/cocos2dx/cpp/AppActivity", "startTiming", "()V");
+	  string str = "abc";
 
-    	if(isHave)
-    	{
-    		methodInfo.env->CallVoidMethod(jobj, methodInfo.methodID);
-    	}    	    	
-    }
+	  jstring stringArg = methodInfo.env->NewStringUTF(str.c_str());
+	  methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID, stringArg, 1, 1);
+	  //return;
+	  methodInfo.env->DeleteLocalRef(stringArg);
+	  methodInfo.env->DeleteLocalRef(methodInfo.classID);
 }
+
+//void Clock::startTiming()
+//{
+//	return;
+//
+//    JniMethodInfo methodInfo;
+//    jobject jobj;
+//
+//    bool isHave = JniHelper::getStaticMethodInfo(methodInfo,
+//    		"org/cocos2dx/cpp/AppActivity", "getActivity", "()Ljava/lang/Object;");
+//
+//    if (isHave)
+//    {
+//        jobj = methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID);
+//
+//        isHave = JniHelper::getMethodInfo(methodInfo,
+//        		"org/cocos2dx/cpp/AppActivity", "startTiming", "()V");
+//
+//    	if(isHave)
+//    	{
+//    		methodInfo.env->CallVoidMethod(jobj, methodInfo.methodID);
+//    	}
+//    }
+//}

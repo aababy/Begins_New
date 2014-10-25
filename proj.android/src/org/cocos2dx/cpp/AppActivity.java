@@ -26,10 +26,18 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.cpp;
 
+import java.util.Calendar;
+
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Intent;
+import android.util.Log;
+
 public class AppActivity extends Cocos2dxActivity {
+	
 	public Cocos2dxGLSurfaceView onCreateView() {  
 	       Cocos2dxGLSurfaceView glSurfaceView = new Cocos2dxGLSurfaceView(this);  
 	       // TestCpp should create stencil buffer  
@@ -37,4 +45,26 @@ public class AppActivity extends Cocos2dxActivity {
 	          
 	       return glSurfaceView;
 	}
+	
+    public static void showLocalNotification(String message, int interval, int tag) {
+        Log.v("error", "showLocalNotification");
+        PendingIntent sender = getPendingIntent(message, tag);
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(System.currentTimeMillis());
+        calendar.add(Calendar.SECOND, 10);
+
+        AlarmManager am = (AlarmManager)getContext().getSystemService(ALARM_SERVICE);
+        am.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), sender);
+        
+        Log.v("error", "showLocalNotification 1");
+    }
+	
+    private static PendingIntent getPendingIntent(String message, int tag) {
+        Intent i = new Intent(getContext().getApplicationContext(), LocalNotificationReceiver.class);
+        i.putExtra("notification_id", tag);
+        i.putExtra("message", message);
+        PendingIntent sender = PendingIntent.getBroadcast(getContext(),  tag, i, PendingIntent.FLAG_UPDATE_CURRENT);
+        return sender;
+    }
 }

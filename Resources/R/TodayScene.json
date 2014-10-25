@@ -4,7 +4,11 @@
   "designHeight": 800,
   "dataScale": 1.0,
   "textures": [],
-  "texturesPng": [],
+  "texturesPng": [
+    "button_normal.png",
+    "button_down.png",
+    "button_disable.png"
+  ],
   "nodeTree": {
     "options": {
       "$type": "EditorCommon.JsonModel.Component.GUI.RootGUISurrogate, EditorCommon",
@@ -105,6 +109,50 @@
             },
             "children": [],
             "classname": "ListView"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.ButtonSurrogate, EditorCommon",
+              "normalData": {
+                "resourceType": 0,
+                "path": "button_normal.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 0,
+                "path": "button_down.png",
+                "plistFile": ""
+              },
+              "disabledData": {
+                "resourceType": 0,
+                "path": "button_disable.png",
+                "plistFile": ""
+              },
+              "text": "开始",
+              "fontSize": 30,
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 80.0,
+              "scale9Height": 45.0,
+              "x": 103.0,
+              "y": 704.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 80.0,
+              "height": 45.0,
+              "positionPercentX": 0.214583337,
+              "positionPercentY": 0.88,
+              "sizePercentX": 0.214583337,
+              "sizePercentY": 0.05,
+              "actionTag": 979705303,
+              "tag": 138,
+              "ignoreSize": true,
+              "name": "Button_17",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
           }
         ],
         "classname": "Panel"

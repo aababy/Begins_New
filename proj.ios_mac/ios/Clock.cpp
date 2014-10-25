@@ -36,7 +36,7 @@ bool Clock::checkMission()
 Clock::Clock()
 {
     _pool = xMissionPool;
-    startTiming();
+    //startTiming();
 }
 
 

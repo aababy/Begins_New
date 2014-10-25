@@ -13,11 +13,11 @@ class Clock
 public:
     static Clock* getInstance();
 	bool checkMission();
+    void startTiming();
 private:
     Clock();
 	~Clock(void);
-    void startTiming();
-    
+
     MissionPool *_pool;
 };
 

@@ -5,6 +5,7 @@
 enum UITag {
     kScore = 3,
     kList,
+    kStart = 138,
     kMax,
 };
 
@@ -37,6 +38,8 @@ bool TodayScene::init()
         
         xMissionPool->getMission();
         score->setString(itostr(xMissionPool->getScore()));
+
+        initButton(kStart, _widget, CC_CALLBACK_2(TodayScene::onButton, this));
         
         //列表
         listView = (ListView*)Helper::seekWidgetByTag(_widget, kList);
@@ -76,6 +79,14 @@ void TodayScene::updateList(Ref *pSender)
         labTime->setString(getShowTime(mission->_scTime));
 
         listView->pushBackCustomItem(cell);
+    }
+}
+
+void TodayScene::onButton(Ref *pSender, Widget::TouchEventType type)
+{
+    if(type != Widget::TouchEventType::ENDED)
+    {
+        xClock->startTiming();
     }
 }
 
