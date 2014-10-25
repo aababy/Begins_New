@@ -46,3 +46,6 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+# Cocos Studio project files
+Cocos_Studio/Begins/Backup/

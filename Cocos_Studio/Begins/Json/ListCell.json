@@ -1,0 +1,95 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 480,
+  "designHeight": 60,
+  "dataScale": 1.0,
+  "textures": [],
+  "texturesPng": [],
+  "nodeTree": {
+    "options": {
+      "$type": "EditorCommon.JsonModel.Component.GUI.RootGUISurrogate, EditorCommon",
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "$type": "EditorCommon.JsonModel.Component.GUI.PanelSurrogate, EditorCommon",
+          "bgColorOpacity": 0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Panel",
+          "width": 480.0,
+          "height": 60.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 0.075,
+          "actionTag": 1,
+          "tag": 1,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_1",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "任务的名称一共有十二个字",
+              "x": 185.0,
+              "y": 28.0,
+              "visible": true,
+              "classType": "Label",
+              "width": 360.0,
+              "height": 49.0,
+              "positionPercentX": 0.385416657,
+              "positionPercentY": 0.466666669,
+              "sizePercentX": 0.19583334,
+              "sizePercentY": 0.533333361,
+              "actionTag": 2,
+              "tag": 2,
+              "ignoreSize": true,
+              "name": "Label_1",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "01-01",
+              "hAlignment": 2,
+              "x": 434.0,
+              "y": 28.0,
+              "visible": true,
+              "classType": "Label",
+              "width": 83.0,
+              "height": 49.0,
+              "positionPercentX": 0.904166639,
+              "positionPercentY": 0.466666669,
+              "sizePercentX": 0.19583334,
+              "sizePercentY": 0.533333361,
+              "actionTag": 3,
+              "tag": 3,
+              "ignoreSize": true,
+              "name": "Label_2",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}

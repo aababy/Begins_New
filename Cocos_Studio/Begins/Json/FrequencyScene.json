@@ -1,0 +1,494 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 480,
+  "designHeight": 800,
+  "dataScale": 1.0,
+  "textures": [],
+  "texturesPng": [],
+  "nodeTree": {
+    "options": {
+      "$type": "EditorCommon.JsonModel.Component.GUI.RootGUISurrogate, EditorCommon",
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "$type": "EditorCommon.JsonModel.Component.GUI.PanelSurrogate, EditorCommon",
+          "bgColorOpacity": 0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Panel",
+          "width": 480.0,
+          "height": 800.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 1.0,
+          "actionTag": 1,
+          "tag": 37,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_7",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.CheckBoxSurrogate, EditorCommon",
+              "backGroundBoxData": {
+                "resourceType": 0,
+                "path": "checkbox_bg.png",
+                "plistFile": ""
+              },
+              "backGroundBoxSelectedData": {
+                "resourceType": 0
+              },
+              "backGroundBoxDisabledData": {
+                "resourceType": 0
+              },
+              "frontCrossData": {
+                "resourceType": 0,
+                "path": "checkbox_fg.png",
+                "plistFile": ""
+              },
+              "frontCrossDisabledData": {
+                "resourceType": 0
+              },
+              "x": 65.0,
+              "y": 760.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "CheckBox",
+              "width": 80.0,
+              "height": 35.0,
+              "positionPercentX": 0.135416672,
+              "positionPercentY": 0.95,
+              "sizePercentX": 0.116666667,
+              "sizePercentY": 0.07,
+              "actionTag": 9,
+              "tag": 30,
+              "ignoreSize": true,
+              "name": "CheckBox_4_1",
+              "classname": "CheckBox"
+            },
+            "children": [
+              {
+                "options": {
+                  "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+                  "fontSize": 30,
+                  "text": "星期一",
+                  "hAlignment": 1,
+                  "visible": true,
+                  "classType": "Label",
+                  "width": 90.0,
+                  "height": 49.0,
+                  "sizePercentX": 1.175,
+                  "sizePercentY": 0.9142857,
+                  "actionTag": 10,
+                  "tag": 47,
+                  "ignoreSize": true,
+                  "name": "Label_5",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              }
+            ],
+            "classname": "CheckBox"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.CheckBoxSurrogate, EditorCommon",
+              "backGroundBoxData": {
+                "resourceType": 0,
+                "path": "checkbox_bg.png",
+                "plistFile": ""
+              },
+              "backGroundBoxSelectedData": {
+                "resourceType": 0
+              },
+              "backGroundBoxDisabledData": {
+                "resourceType": 0
+              },
+              "frontCrossData": {
+                "resourceType": 0,
+                "path": "checkbox_fg.png",
+                "plistFile": ""
+              },
+              "frontCrossDisabledData": {
+                "resourceType": 0
+              },
+              "x": 65.0,
+              "y": 400.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "CheckBox",
+              "width": 80.0,
+              "height": 35.0,
+              "positionPercentX": 0.135416672,
+              "positionPercentY": 0.5,
+              "sizePercentX": 0.116666667,
+              "sizePercentY": 0.07,
+              "actionTag": 11,
+              "tag": 36,
+              "ignoreSize": true,
+              "name": "CheckBox_4_0_0",
+              "classname": "CheckBox"
+            },
+            "children": [
+              {
+                "options": {
+                  "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+                  "fontSize": 30,
+                  "text": "星期天",
+                  "hAlignment": 1,
+                  "visible": true,
+                  "classType": "Label",
+                  "width": 90.0,
+                  "height": 49.0,
+                  "sizePercentX": 1.175,
+                  "sizePercentY": 0.9142857,
+                  "actionTag": 12,
+                  "tag": 49,
+                  "ignoreSize": true,
+                  "name": "Label_5",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              }
+            ],
+            "classname": "CheckBox"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.CheckBoxSurrogate, EditorCommon",
+              "backGroundBoxData": {
+                "resourceType": 0,
+                "path": "checkbox_bg.png",
+                "plistFile": ""
+              },
+              "backGroundBoxSelectedData": {
+                "resourceType": 0
+              },
+              "backGroundBoxDisabledData": {
+                "resourceType": 0
+              },
+              "frontCrossData": {
+                "resourceType": 0,
+                "path": "checkbox_fg.png",
+                "plistFile": ""
+              },
+              "frontCrossDisabledData": {
+                "resourceType": 0
+              },
+              "x": 65.0,
+              "y": 700.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "CheckBox",
+              "width": 80.0,
+              "height": 35.0,
+              "positionPercentX": 0.135416672,
+              "positionPercentY": 0.875,
+              "sizePercentX": 0.116666667,
+              "sizePercentY": 0.07,
+              "actionTag": 23,
+              "tag": 31,
+              "ignoreSize": true,
+              "name": "CheckBox_4_0_0_1",
+              "classname": "CheckBox"
+            },
+            "children": [
+              {
+                "options": {
+                  "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+                  "fontSize": 30,
+                  "text": "星期二",
+                  "hAlignment": 1,
+                  "visible": true,
+                  "classType": "Label",
+                  "width": 90.0,
+                  "height": 49.0,
+                  "sizePercentX": 1.175,
+                  "sizePercentY": 0.9142857,
+                  "actionTag": 24,
+                  "tag": 61,
+                  "ignoreSize": true,
+                  "name": "Label_5",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              }
+            ],
+            "classname": "CheckBox"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.CheckBoxSurrogate, EditorCommon",
+              "backGroundBoxData": {
+                "resourceType": 0,
+                "path": "checkbox_bg.png",
+                "plistFile": ""
+              },
+              "backGroundBoxSelectedData": {
+                "resourceType": 0
+              },
+              "backGroundBoxDisabledData": {
+                "resourceType": 0
+              },
+              "frontCrossData": {
+                "resourceType": 0,
+                "path": "checkbox_fg.png",
+                "plistFile": ""
+              },
+              "frontCrossDisabledData": {
+                "resourceType": 0
+              },
+              "x": 65.0,
+              "y": 640.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "CheckBox",
+              "width": 80.0,
+              "height": 35.0,
+              "positionPercentX": 0.135416672,
+              "positionPercentY": 0.8,
+              "sizePercentX": 0.116666667,
+              "sizePercentY": 0.07,
+              "actionTag": 29,
+              "tag": 32,
+              "ignoreSize": true,
+              "name": "CheckBox_4_0_0_2",
+              "classname": "CheckBox"
+            },
+            "children": [
+              {
+                "options": {
+                  "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+                  "fontSize": 30,
+                  "text": "星期三",
+                  "hAlignment": 1,
+                  "visible": true,
+                  "classType": "Label",
+                  "width": 90.0,
+                  "height": 49.0,
+                  "sizePercentX": 1.175,
+                  "sizePercentY": 0.9142857,
+                  "actionTag": 30,
+                  "tag": 67,
+                  "ignoreSize": true,
+                  "name": "Label_5",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              }
+            ],
+            "classname": "CheckBox"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.CheckBoxSurrogate, EditorCommon",
+              "backGroundBoxData": {
+                "resourceType": 0,
+                "path": "checkbox_bg.png",
+                "plistFile": ""
+              },
+              "backGroundBoxSelectedData": {
+                "resourceType": 0
+              },
+              "backGroundBoxDisabledData": {
+                "resourceType": 0
+              },
+              "frontCrossData": {
+                "resourceType": 0,
+                "path": "checkbox_fg.png",
+                "plistFile": ""
+              },
+              "frontCrossDisabledData": {
+                "resourceType": 0
+              },
+              "x": 65.0,
+              "y": 580.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "CheckBox",
+              "width": 80.0,
+              "height": 35.0,
+              "positionPercentX": 0.135416672,
+              "positionPercentY": 0.725,
+              "sizePercentX": 0.116666667,
+              "sizePercentY": 0.07,
+              "actionTag": 35,
+              "tag": 33,
+              "ignoreSize": true,
+              "name": "CheckBox_4_0_0_3",
+              "classname": "CheckBox"
+            },
+            "children": [
+              {
+                "options": {
+                  "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+                  "fontSize": 30,
+                  "text": "星期四",
+                  "hAlignment": 1,
+                  "visible": true,
+                  "classType": "Label",
+                  "width": 90.0,
+                  "height": 49.0,
+                  "sizePercentX": 1.175,
+                  "sizePercentY": 0.9142857,
+                  "actionTag": 36,
+                  "tag": 73,
+                  "ignoreSize": true,
+                  "name": "Label_5",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              }
+            ],
+            "classname": "CheckBox"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.CheckBoxSurrogate, EditorCommon",
+              "backGroundBoxData": {
+                "resourceType": 0,
+                "path": "checkbox_bg.png",
+                "plistFile": ""
+              },
+              "backGroundBoxSelectedData": {
+                "resourceType": 0
+              },
+              "backGroundBoxDisabledData": {
+                "resourceType": 0
+              },
+              "frontCrossData": {
+                "resourceType": 0,
+                "path": "checkbox_fg.png",
+                "plistFile": ""
+              },
+              "frontCrossDisabledData": {
+                "resourceType": 0
+              },
+              "x": 65.0,
+              "y": 520.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "CheckBox",
+              "width": 80.0,
+              "height": 35.0,
+              "positionPercentX": 0.135416672,
+              "positionPercentY": 0.65,
+              "sizePercentX": 0.116666667,
+              "sizePercentY": 0.07,
+              "actionTag": 41,
+              "tag": 34,
+              "ignoreSize": true,
+              "name": "CheckBox_4_0_0_4",
+              "classname": "CheckBox"
+            },
+            "children": [
+              {
+                "options": {
+                  "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+                  "fontSize": 30,
+                  "text": "星期五",
+                  "hAlignment": 1,
+                  "visible": true,
+                  "classType": "Label",
+                  "width": 90.0,
+                  "height": 49.0,
+                  "sizePercentX": 1.175,
+                  "sizePercentY": 0.9142857,
+                  "actionTag": 42,
+                  "tag": 79,
+                  "ignoreSize": true,
+                  "name": "Label_5",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              }
+            ],
+            "classname": "CheckBox"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.CheckBoxSurrogate, EditorCommon",
+              "backGroundBoxData": {
+                "resourceType": 0,
+                "path": "checkbox_bg.png",
+                "plistFile": ""
+              },
+              "backGroundBoxSelectedData": {
+                "resourceType": 0
+              },
+              "backGroundBoxDisabledData": {
+                "resourceType": 0
+              },
+              "frontCrossData": {
+                "resourceType": 0,
+                "path": "checkbox_fg.png",
+                "plistFile": ""
+              },
+              "frontCrossDisabledData": {
+                "resourceType": 0
+              },
+              "x": 65.0,
+              "y": 460.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "CheckBox",
+              "width": 80.0,
+              "height": 35.0,
+              "positionPercentX": 0.135416672,
+              "positionPercentY": 0.575,
+              "sizePercentX": 0.116666667,
+              "sizePercentY": 0.07,
+              "actionTag": 47,
+              "tag": 35,
+              "ignoreSize": true,
+              "name": "CheckBox_4_0_0_5",
+              "classname": "CheckBox"
+            },
+            "children": [
+              {
+                "options": {
+                  "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+                  "fontSize": 30,
+                  "text": "星期六",
+                  "hAlignment": 1,
+                  "visible": true,
+                  "classType": "Label",
+                  "width": 90.0,
+                  "height": 49.0,
+                  "sizePercentX": 1.175,
+                  "sizePercentY": 0.9142857,
+                  "actionTag": 48,
+                  "tag": 85,
+                  "ignoreSize": true,
+                  "name": "Label_5",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              }
+            ],
+            "classname": "CheckBox"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}

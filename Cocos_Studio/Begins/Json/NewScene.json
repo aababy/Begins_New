@@ -1,0 +1,278 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 480,
+  "designHeight": 800,
+  "dataScale": 1.0,
+  "textures": [],
+  "texturesPng": [],
+  "nodeTree": {
+    "options": {
+      "$type": "EditorCommon.JsonModel.Component.GUI.RootGUISurrogate, EditorCommon",
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "$type": "EditorCommon.JsonModel.Component.GUI.PanelSurrogate, EditorCommon",
+          "bgColorOpacity": 0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Panel",
+          "width": 480.0,
+          "height": 800.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 1.0,
+          "actionTag": 2,
+          "tag": 5,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_4",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.TextFieldSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "",
+              "placeHolder": "任务名称",
+              "x": 227.0,
+              "y": 744.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "TextField",
+              "width": 120.0,
+              "height": 49.0,
+              "positionPercentX": 0.472916663,
+              "positionPercentY": 0.93,
+              "sizePercentX": 0.185416669,
+              "sizePercentY": 0.04,
+              "actionTag": 3,
+              "tag": 9,
+              "ignoreSize": true,
+              "name": "TextField_3",
+              "classname": "TextField"
+            },
+            "children": [],
+            "classname": "TextField"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.CheckBoxSurrogate, EditorCommon",
+              "backGroundBoxData": {
+                "resourceType": 0,
+                "path": "checkbox_bg.png",
+                "plistFile": ""
+              },
+              "backGroundBoxSelectedData": {
+                "resourceType": 0
+              },
+              "backGroundBoxDisabledData": {
+                "resourceType": 0
+              },
+              "frontCrossData": {
+                "resourceType": 0,
+                "path": "checkbox_fg.png",
+                "plistFile": ""
+              },
+              "frontCrossDisabledData": {
+                "resourceType": 0
+              },
+              "x": 50.0,
+              "y": 683.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "CheckBox",
+              "width": 80.0,
+              "height": 35.0,
+              "positionPercentX": 0.104166664,
+              "positionPercentY": 0.85375,
+              "sizePercentX": 0.116666667,
+              "sizePercentY": 0.07,
+              "actionTag": 1,
+              "tag": 10,
+              "ignoreSize": true,
+              "name": "CheckBox_4",
+              "classname": "CheckBox"
+            },
+            "children": [
+              {
+                "options": {
+                  "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+                  "fontSize": 30,
+                  "text": "普通",
+                  "hAlignment": 1,
+                  "visible": true,
+                  "classType": "Label",
+                  "width": 60.0,
+                  "height": 49.0,
+                  "sizePercentX": 1.175,
+                  "sizePercentY": 0.9142857,
+                  "actionTag": 5,
+                  "tag": 11,
+                  "ignoreSize": true,
+                  "name": "Label_5",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              }
+            ],
+            "classname": "CheckBox"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.CheckBoxSurrogate, EditorCommon",
+              "backGroundBoxData": {
+                "resourceType": 0,
+                "path": "checkbox_bg.png",
+                "plistFile": ""
+              },
+              "backGroundBoxSelectedData": {
+                "resourceType": 0
+              },
+              "backGroundBoxDisabledData": {
+                "resourceType": 0
+              },
+              "frontCrossData": {
+                "resourceType": 0,
+                "path": "checkbox_fg.png",
+                "plistFile": ""
+              },
+              "frontCrossDisabledData": {
+                "resourceType": 0
+              },
+              "x": 144.0,
+              "y": 683.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "CheckBox",
+              "width": 80.0,
+              "height": 35.0,
+              "positionPercentX": 0.3,
+              "positionPercentY": 0.85375,
+              "sizePercentX": 0.116666667,
+              "sizePercentY": 0.07,
+              "actionTag": 8,
+              "tag": 14,
+              "ignoreSize": true,
+              "name": "CheckBox_4_0",
+              "classname": "CheckBox"
+            },
+            "children": [
+              {
+                "options": {
+                  "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+                  "fontSize": 30,
+                  "text": "日常",
+                  "hAlignment": 1,
+                  "visible": true,
+                  "classType": "Label",
+                  "width": 60.0,
+                  "height": 49.0,
+                  "sizePercentX": 1.175,
+                  "sizePercentY": 0.9142857,
+                  "actionTag": 9,
+                  "tag": 15,
+                  "ignoreSize": true,
+                  "name": "Label_5",
+                  "classname": "Label"
+                },
+                "children": [],
+                "classname": "Label"
+              }
+            ],
+            "classname": "CheckBox"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.TextFieldSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "",
+              "placeHolder": "提醒时间",
+              "x": 227.0,
+              "y": 616.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "TextField",
+              "width": 120.0,
+              "height": 49.0,
+              "positionPercentX": 0.472916663,
+              "positionPercentY": 0.77,
+              "sizePercentX": 0.185416669,
+              "sizePercentY": 0.04,
+              "actionTag": 10,
+              "tag": 16,
+              "ignoreSize": true,
+              "name": "TextField_10",
+              "classname": "TextField"
+            },
+            "children": [],
+            "classname": "TextField"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.TextFieldSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "",
+              "placeHolder": "计分",
+              "x": 227.0,
+              "y": 479.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "TextField",
+              "width": 60.0,
+              "height": 49.0,
+              "positionPercentX": 0.472916663,
+              "positionPercentY": 0.59875,
+              "sizePercentX": 0.185416669,
+              "sizePercentY": 0.04,
+              "actionTag": 12,
+              "tag": 18,
+              "ignoreSize": true,
+              "name": "TextField_10_0",
+              "classname": "TextField"
+            },
+            "children": [],
+            "classname": "TextField"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.TextFieldSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "",
+              "placeHolder": "截至时间",
+              "x": 227.0,
+              "y": 551.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "TextField",
+              "width": 120.0,
+              "height": 49.0,
+              "positionPercentX": 0.472916663,
+              "positionPercentY": 0.68875,
+              "sizePercentX": 0.185416669,
+              "sizePercentY": 0.04,
+              "actionTag": 14,
+              "tag": 20,
+              "ignoreSize": true,
+              "name": "TextField_10_0_1",
+              "classname": "TextField"
+            },
+            "children": [],
+            "classname": "TextField"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}

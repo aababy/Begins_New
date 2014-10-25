@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>/Users/yons/Begins/git/Cocos_Studio/Begins</ProjectDir>
+  <Version>1.0.0.0</Version>
+  <Resources>/Users/yons/Begins/git/Cocos_Studio/Begins/Resources</Resources>
+  <Name>Begins</Name>
+  <JsonFileName>Begins.json</JsonFileName>
+  <JsonFolder>/Users/yons/Begins/git/Cocos_Studio/Begins/Json</JsonFolder>
+  <JsonList>
+    <string>TodayScene.json</string>
+    <string>NewScene.json</string>
+    <string>ListCell.json</string>
+    <string>Dialog.json</string>
+    <string>DetailScene.json</string>
+    <string>FrequencyScene.json</string>
+  </JsonList>
+  <filePath>/Users/yons/Begins/git/Cocos_Studio/Begins/Begins.xml.ui</filePath>
+  <ProjectType>UIProject</ProjectType>
+  <ResRelativePath />
+  <imageFileList />
+  <imagePngList />
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>TodayScene.json</CurrentUIJson>
+  <CanvasSize>
+    <Width>480</Width>
+    <Height>800</Height>
+  </CanvasSize>
+</UIProject>

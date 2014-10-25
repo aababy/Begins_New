@@ -1,0 +1,119 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 480,
+  "designHeight": 800,
+  "dataScale": 1.0,
+  "textures": [],
+  "texturesPng": [],
+  "nodeTree": {
+    "options": {
+      "$type": "EditorCommon.JsonModel.Component.GUI.RootGUISurrogate, EditorCommon",
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "$type": "EditorCommon.JsonModel.Component.GUI.PanelSurrogate, EditorCommon",
+          "bgColorOpacity": 0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Panel",
+          "width": 480.0,
+          "height": 800.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 2.5,
+          "actionTag": -1,
+          "tag": 1,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_14",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "你的积分:",
+              "x": 277.0,
+              "y": 704.0,
+              "visible": true,
+              "classType": "Label",
+              "width": 127.0,
+              "height": 49.0,
+              "positionPercentX": 0.577083349,
+              "positionPercentY": 0.88,
+              "sizePercentX": 0.19583334,
+              "sizePercentY": 0.04,
+              "actionTag": 1,
+              "tag": 2,
+              "ignoreSize": true,
+              "name": "Label_1",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "999999",
+              "x": 397.0,
+              "y": 704.0,
+              "visible": true,
+              "classType": "Label",
+              "width": 105.0,
+              "height": 49.0,
+              "positionPercentX": 0.827083349,
+              "positionPercentY": 0.88,
+              "sizePercentX": 0.19583334,
+              "sizePercentY": 0.04,
+              "actionTag": 2,
+              "tag": 3,
+              "ignoreSize": true,
+              "name": "Label_2",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.ListViewSurrogate, EditorCommon",
+              "colorType": 0,
+              "clipAble": true,
+              "bounceEnable": true,
+              "direction": 1,
+              "gravity": 2,
+              "touchAble": true,
+              "visible": true,
+              "classType": "ListView",
+              "width": 480.0,
+              "height": 600.0,
+              "sizePercentX": 1.0,
+              "sizePercentY": 0.75,
+              "actionTag": 3,
+              "tag": 4,
+              "anchorPointX": 0.0,
+              "anchorPointY": 0.0,
+              "name": "ListView_3",
+              "classname": "ListView"
+            },
+            "children": [],
+            "classname": "ListView"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}
