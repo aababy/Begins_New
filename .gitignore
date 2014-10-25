@@ -1,6 +1,19 @@
 # cocos2d-x basic files
 cocos2d/
 
+# OS X files
+.DS_Store
+.Trashes
+*.swp
+*~.nib
+
+# Xcode project files
+DerivedData/
+build/
+*.pbxuser
+xcuserdata
+project.xcworkspace/
+
 # built application files
 *.apk
 *.ap_
