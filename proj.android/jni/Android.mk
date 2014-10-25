@@ -15,7 +15,20 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
 ../../Classes/HelloWorldScene.cpp \
 ../../Classes/Database.cpp \
 ../../Classes/sqlite3.c \
-../../Classes/Tool.cpp
+../../Classes/Tool.cpp \
+../../TodayScene.cpp \
+../../XmlData.cpp \
+../../User.cpp \
+../../SceneManager.cpp \
+../../NewScene.cpp \
+../../MTNotificationQueue.cpp \
+../../MissionPool.cpp \
+../../Mission.cpp \
+../../Log.cpp \
+../../GestureLayer.cpp \
+../../FrequencyScene.cpp \
+../../Dialog.cpp \
+../../DetailScene.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 

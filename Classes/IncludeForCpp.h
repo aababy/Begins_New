@@ -25,23 +25,22 @@
 #include "platform/android/jni/JniHelper.h"
 #endif
 
-//#include "Clock.h"
+#include "Clock.h"
 #include "Tool.h"
 #include "Database.h"
-//#include "MissionPool.h"
-//#include "Mission.h"
-//#include "Log.h"
-//#include "User.h"
-//#include "GestureLayer.h"
-//#include "SceneManager.h"
-//#include "XmlData.h"
-//#include "Dialog.h"
-//#include "MTNotificationQueue.h"
-
-//#include "TodayScene.h"
-//#include "NewScene.h"
-//#include "DetailScene.h"
-//#include "FrequencyScene.h"
+#include "MissionPool.h"
+#include "Mission.h"
+#include "Log.h"
+#include "User.h"
+#include "GestureLayer.h"
+#include "SceneManager.h"
+#include "XmlData.h"
+#include "Dialog.h"
+#include "MTNotificationQueue.h"
+#include "TodayScene.h"
+#include "NewScene.h"
+#include "DetailScene.h"
+#include "FrequencyScene.h"
 
 using namespace cocos2d;
 using namespace cocostudio::timeline;

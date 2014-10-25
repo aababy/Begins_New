@@ -69,9 +69,9 @@ public:
 	
     int  getWeekday(string& date);
 	//////////////////////////////////////////////////////////////////////////
-    //void insertMission(Mission *miss, const char *szTableName = "mission");
-    //void updateExpireTime(Mission *miss, int iDay);
-	//void updateRemindTime(Mission *miss, int iDay);
+    void insertMission(Mission *miss, const char *szTableName = "mission");
+    void updateExpireTime(Mission *miss, int iDay);
+	void updateRemindTime(Mission *miss, int iDay);
     
 private:
     Database();

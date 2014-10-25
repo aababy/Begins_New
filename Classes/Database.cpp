@@ -283,8 +283,6 @@ int Database::onQuery(void *pData, int argc, char* value[], char* table_name[])
 	case SQL_GetExpire:
 	case SQL_GetMissions:
 		{
-            //TBD by luoxp
-            /*
 			Mission	*miss = new Mission();
 			
 			miss->iMissionID = (int)atoi(value[0]);
@@ -301,7 +299,6 @@ int Database::onQuery(void *pData, int argc, char* value[], char* table_name[])
            
 			vector<Mission*> *vec = (vector<Mission*> *)queryP->pData;
 			vec->push_back(miss);
-            */
 		}
 		break;
     case SQL_GetWeekday:
@@ -321,8 +318,6 @@ void Database::updateScore(int iScore)
 	execute("update user set score = score + (%d) WHERE username = 'luoxp'", iScore);
 }
 
-//TBD by luoxp
-/*
 void Database::insertMission(Mission *miss, const char *szTableName)
 {
 	execute("insert into %q(missionid, type, missionname, crtime, retime, sctime, score) \
@@ -333,25 +328,24 @@ void Database::insertMission(Mission *miss, const char *szTableName)
  
 void Database::updateExpireTime(Mission *miss, int iDay)
 {
-execute("UPDATE mission SET sctime = datetime(%Q, '+%d day') where missionid = %d",
-miss->_scTime.str.c_str(), iDay, miss->iMissionID);
+    execute("UPDATE mission SET sctime = datetime(%Q, '+%d day') where missionid = %d",
+    miss->_scTime.str.c_str(), iDay, miss->iMissionID);
 }
 
 void Database::updateRemindTime(Mission *miss, int iDay)
 {
-if (iDay == 0)
-{
-//临时设置为null, 后期可以增加已提醒标识.
-execute("UPDATE mission SET retime = null where missionid = %d",
-miss->iMissionID);
+    if (iDay == 0)
+    {
+        //临时设置为null, 后期可以增加已提醒标识.
+        execute("UPDATE mission SET retime = null where missionid = %d",
+        miss->iMissionID);
+    }
+    else
+    {
+        execute("UPDATE mission SET retime = datetime(%Q, '+%d day') where missionid = %d",
+        miss->_reTime.str.c_str(), iDay, miss->iMissionID);
+    }
 }
-else
-{
-execute("UPDATE mission SET retime = datetime(%Q, '+%d day') where missionid = %d",
-miss->_reTime.str.c_str(), iDay, miss->iMissionID);
-}
-}
-*/
 
 void Database::deleteMission(int id)
 {

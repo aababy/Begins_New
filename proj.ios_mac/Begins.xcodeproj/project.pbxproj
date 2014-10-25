@@ -72,6 +72,20 @@
 		E404BC9E19FB379E003D3133 /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BC9919FB379E003D3133 /* Database.cpp */; };
 		E404BC9F19FB379E003D3133 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = E404BC9B19FB379E003D3133 /* sqlite3.c */; };
 		E404BCA619FB3EE9003D3133 /* Tool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCA419FB3EE9003D3133 /* Tool.cpp */; };
+		E404BCAB19FB4512003D3133 /* TodayScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCA919FB4512003D3133 /* TodayScene.cpp */; };
+		E404BCC519FB4838003D3133 /* DetailScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCAD19FB4838003D3133 /* DetailScene.cpp */; };
+		E404BCC619FB4838003D3133 /* Dialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCAF19FB4838003D3133 /* Dialog.cpp */; };
+		E404BCC719FB4838003D3133 /* FrequencyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCB119FB4838003D3133 /* FrequencyScene.cpp */; };
+		E404BCC819FB4838003D3133 /* GestureLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCB319FB4838003D3133 /* GestureLayer.cpp */; };
+		E404BCC919FB4838003D3133 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCB519FB4838003D3133 /* Log.cpp */; };
+		E404BCCA19FB4838003D3133 /* Mission.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCB719FB4838003D3133 /* Mission.cpp */; };
+		E404BCCB19FB4838003D3133 /* MissionPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCB919FB4838003D3133 /* MissionPool.cpp */; };
+		E404BCCC19FB4838003D3133 /* MTNotificationQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCBB19FB4838003D3133 /* MTNotificationQueue.cpp */; };
+		E404BCCD19FB4838003D3133 /* NewScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCBD19FB4838003D3133 /* NewScene.cpp */; };
+		E404BCCE19FB4838003D3133 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCBF19FB4838003D3133 /* SceneManager.cpp */; };
+		E404BCCF19FB4838003D3133 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCC119FB4838003D3133 /* User.cpp */; };
+		E404BCD019FB4838003D3133 /* XmlData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCC319FB4838003D3133 /* XmlData.cpp */; };
+		E404BCD219FB4881003D3133 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCD119FB4881003D3133 /* Clock.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -279,6 +293,34 @@
 		E404BCA319FB380B003D3133 /* IncludeForHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IncludeForHeader.h; path = ../Classes/IncludeForHeader.h; sourceTree = "<group>"; };
 		E404BCA419FB3EE9003D3133 /* Tool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tool.cpp; path = ../Classes/Tool.cpp; sourceTree = "<group>"; };
 		E404BCA519FB3EE9003D3133 /* Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tool.h; path = ../Classes/Tool.h; sourceTree = "<group>"; };
+		E404BCA919FB4512003D3133 /* TodayScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TodayScene.cpp; path = ../Classes/TodayScene.cpp; sourceTree = "<group>"; };
+		E404BCAA19FB4512003D3133 /* TodayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodayScene.h; path = ../Classes/TodayScene.h; sourceTree = "<group>"; };
+		E404BCAC19FB4838003D3133 /* Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Clock.h; path = ../Classes/Clock.h; sourceTree = "<group>"; };
+		E404BCAD19FB4838003D3133 /* DetailScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DetailScene.cpp; path = ../Classes/DetailScene.cpp; sourceTree = "<group>"; };
+		E404BCAE19FB4838003D3133 /* DetailScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailScene.h; path = ../Classes/DetailScene.h; sourceTree = "<group>"; };
+		E404BCAF19FB4838003D3133 /* Dialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Dialog.cpp; path = ../Classes/Dialog.cpp; sourceTree = "<group>"; };
+		E404BCB019FB4838003D3133 /* Dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dialog.h; path = ../Classes/Dialog.h; sourceTree = "<group>"; };
+		E404BCB119FB4838003D3133 /* FrequencyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FrequencyScene.cpp; path = ../Classes/FrequencyScene.cpp; sourceTree = "<group>"; };
+		E404BCB219FB4838003D3133 /* FrequencyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrequencyScene.h; path = ../Classes/FrequencyScene.h; sourceTree = "<group>"; };
+		E404BCB319FB4838003D3133 /* GestureLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GestureLayer.cpp; path = ../Classes/GestureLayer.cpp; sourceTree = "<group>"; };
+		E404BCB419FB4838003D3133 /* GestureLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GestureLayer.h; path = ../Classes/GestureLayer.h; sourceTree = "<group>"; };
+		E404BCB519FB4838003D3133 /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Log.cpp; path = ../Classes/Log.cpp; sourceTree = "<group>"; };
+		E404BCB619FB4838003D3133 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Log.h; path = ../Classes/Log.h; sourceTree = "<group>"; };
+		E404BCB719FB4838003D3133 /* Mission.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Mission.cpp; path = ../Classes/Mission.cpp; sourceTree = "<group>"; };
+		E404BCB819FB4838003D3133 /* Mission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mission.h; path = ../Classes/Mission.h; sourceTree = "<group>"; };
+		E404BCB919FB4838003D3133 /* MissionPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MissionPool.cpp; path = ../Classes/MissionPool.cpp; sourceTree = "<group>"; };
+		E404BCBA19FB4838003D3133 /* MissionPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MissionPool.h; path = ../Classes/MissionPool.h; sourceTree = "<group>"; };
+		E404BCBB19FB4838003D3133 /* MTNotificationQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MTNotificationQueue.cpp; path = ../Classes/MTNotificationQueue.cpp; sourceTree = "<group>"; };
+		E404BCBC19FB4838003D3133 /* MTNotificationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTNotificationQueue.h; path = ../Classes/MTNotificationQueue.h; sourceTree = "<group>"; };
+		E404BCBD19FB4838003D3133 /* NewScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewScene.cpp; path = ../Classes/NewScene.cpp; sourceTree = "<group>"; };
+		E404BCBE19FB4838003D3133 /* NewScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewScene.h; path = ../Classes/NewScene.h; sourceTree = "<group>"; };
+		E404BCBF19FB4838003D3133 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = ../Classes/SceneManager.cpp; sourceTree = "<group>"; };
+		E404BCC019FB4838003D3133 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneManager.h; path = ../Classes/SceneManager.h; sourceTree = "<group>"; };
+		E404BCC119FB4838003D3133 /* User.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = User.cpp; path = ../Classes/User.cpp; sourceTree = "<group>"; };
+		E404BCC219FB4838003D3133 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ../Classes/User.h; sourceTree = "<group>"; };
+		E404BCC319FB4838003D3133 /* XmlData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XmlData.cpp; path = ../Classes/XmlData.cpp; sourceTree = "<group>"; };
+		E404BCC419FB4838003D3133 /* XmlData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XmlData.h; path = ../Classes/XmlData.h; sourceTree = "<group>"; };
+		E404BCD119FB4881003D3133 /* Clock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Clock.cpp; path = ios/Clock.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +375,7 @@
 		080E96DDFE201D6D7F000001 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				E404BCD119FB4881003D3133 /* Clock.cpp */,
 				5087E77117EB970100C73F5D /* Icons */,
 				503AE0FA17EB989F00D1A890 /* AppController.h */,
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
@@ -348,6 +391,33 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E404BCAC19FB4838003D3133 /* Clock.h */,
+				E404BCAD19FB4838003D3133 /* DetailScene.cpp */,
+				E404BCAE19FB4838003D3133 /* DetailScene.h */,
+				E404BCAF19FB4838003D3133 /* Dialog.cpp */,
+				E404BCB019FB4838003D3133 /* Dialog.h */,
+				E404BCB119FB4838003D3133 /* FrequencyScene.cpp */,
+				E404BCB219FB4838003D3133 /* FrequencyScene.h */,
+				E404BCB319FB4838003D3133 /* GestureLayer.cpp */,
+				E404BCB419FB4838003D3133 /* GestureLayer.h */,
+				E404BCB519FB4838003D3133 /* Log.cpp */,
+				E404BCB619FB4838003D3133 /* Log.h */,
+				E404BCB719FB4838003D3133 /* Mission.cpp */,
+				E404BCB819FB4838003D3133 /* Mission.h */,
+				E404BCB919FB4838003D3133 /* MissionPool.cpp */,
+				E404BCBA19FB4838003D3133 /* MissionPool.h */,
+				E404BCBB19FB4838003D3133 /* MTNotificationQueue.cpp */,
+				E404BCBC19FB4838003D3133 /* MTNotificationQueue.h */,
+				E404BCBD19FB4838003D3133 /* NewScene.cpp */,
+				E404BCBE19FB4838003D3133 /* NewScene.h */,
+				E404BCBF19FB4838003D3133 /* SceneManager.cpp */,
+				E404BCC019FB4838003D3133 /* SceneManager.h */,
+				E404BCC119FB4838003D3133 /* User.cpp */,
+				E404BCC219FB4838003D3133 /* User.h */,
+				E404BCC319FB4838003D3133 /* XmlData.cpp */,
+				E404BCC419FB4838003D3133 /* XmlData.h */,
+				E404BCA919FB4512003D3133 /* TodayScene.cpp */,
+				E404BCAA19FB4512003D3133 /* TodayScene.h */,
 				E404BCA419FB3EE9003D3133 /* Tool.cpp */,
 				E404BCA519FB3EE9003D3133 /* Tool.h */,
 				E404BCA219FB380B003D3133 /* IncludeForCpp.h */,
@@ -689,13 +759,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				E404BCAB19FB4512003D3133 /* TodayScene.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
+				E404BCCF19FB4838003D3133 /* User.cpp in Sources */,
+				E404BCC919FB4838003D3133 /* Log.cpp in Sources */,
+				E404BCCD19FB4838003D3133 /* NewScene.cpp in Sources */,
+				E404BCC619FB4838003D3133 /* Dialog.cpp in Sources */,
+				E404BCCA19FB4838003D3133 /* Mission.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				E404BC9E19FB379E003D3133 /* Database.cpp in Sources */,
+				E404BCC719FB4838003D3133 /* FrequencyScene.cpp in Sources */,
 				E404BC9F19FB379E003D3133 /* sqlite3.c in Sources */,
+				E404BCC519FB4838003D3133 /* DetailScene.cpp in Sources */,
+				E404BCD219FB4881003D3133 /* Clock.cpp in Sources */,
+				E404BCCB19FB4838003D3133 /* MissionPool.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
+				E404BCCC19FB4838003D3133 /* MTNotificationQueue.cpp in Sources */,
+				E404BCC819FB4838003D3133 /* GestureLayer.cpp in Sources */,
 				E404BCA619FB3EE9003D3133 /* Tool.cpp in Sources */,
+				E404BCD019FB4838003D3133 /* XmlData.cpp in Sources */,
+				E404BCCE19FB4838003D3133 /* SceneManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
