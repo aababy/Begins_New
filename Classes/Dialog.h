@@ -54,7 +54,6 @@ private:
     static void setEnabled(bool value);
     DialogTag getCallbackTag(int iTag);
 
-    Layer*      m_pUILayer;
     Button*     m_pLeft;
     Button*     m_pRight;
     Label*      m_pTxt;

@@ -42,6 +42,14 @@ Layout * initRoot(const std::string& filename, Layer *layer)
     return root;
 }
 
+Layout * initRootForCell(const std::string& filename, Layer *layer)
+{
+    Node* ui = NodeReader::getInstance()->createNode(filename);
+    Layout* root = (Layout*)(ui->getChildren().at(0));
+
+    return root;
+}
+
 Layout * initLayout(int iTag, Widget* root, Widget::ccWidgetTouchCallback callback)
 {
     Layout *btn = (Layout*)Helper::seekWidgetByTag(root, iTag);

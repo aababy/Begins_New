@@ -18,7 +18,10 @@
   <ProjectType>UIProject</ProjectType>
   <ResRelativePath />
   <imageFileList />
-  <imagePngList />
+  <imagePngList>
+    <string>checkbox_bg.png</string>
+    <string>checkbox_fg.png</string>
+  </imagePngList>
   <JsonSuffix>.json</JsonSuffix>
   <CurrentUIJson>TodayScene.json</CurrentUIJson>
   <CanvasSize>

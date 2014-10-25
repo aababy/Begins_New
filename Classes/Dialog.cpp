@@ -35,7 +35,7 @@ bool Dialog::init()
 {
     Layer::init();
 
-    m_pRootLayer = initRoot("Scenes/Dialog.ExportJson", this);
+    m_pRootLayer = initRoot("R/Dialog.json", this);
 
     m_pLeft = initButton(LEFT, m_pRootLayer, CC_CALLBACK_2(Dialog::onButton, this));
     m_pRight = initButton(RIGHT, m_pRootLayer, CC_CALLBACK_2(Dialog::onButton, this));
@@ -43,8 +43,6 @@ bool Dialog::init()
     m_pTxt = (Label*)Helper::seekWidgetByTag(m_pRootLayer, TEXT);
 
     m_pLeftBtnOldPoint = m_pLeft->getPosition();
-    
-    addChild(m_pUILayer);
     
     auto screenSize = Director::getInstance()->getWinSize();
     auto rootSize = m_pRootLayer->getSize();

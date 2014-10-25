@@ -31,7 +31,7 @@ bool TodayScene::init()
 {
     if (CCLayer::init())
     {
-        _widget = initRoot("Scenes/TodayScene.ExportJson", this);
+        _widget = initRoot("R/TodayScene.json", this);
         
         Text* score = (Text*)Helper::seekWidgetByTag(_widget, kScore);
         
@@ -60,31 +60,22 @@ TodayScene::~TodayScene()
 void TodayScene::updateList(Ref *pSender)
 {
     listView->removeAllItems();
-    
+
+    Layout *layout = initRootForCell("R/TodayScene.json", this);
+
     // add default item
     for (int i = 0; i < xMissionPool->_vMissions.size(); ++i)
     {
-        listView->pushBackDefaultItem();
-    }
-    
-    Vector<Widget*> items = listView->getItems();
-    
-    for (int i = 0; i < items.size(); i++) {
-        Layout * bg = (Layout*)items.at(i);
-//        bg->setBackGroundColorType(LAYOUT_COLOR_SOLID);
-//        
-//        if (i % 2 == 0) {
-//            bg->setBackGroundColor(Color3B(39, 10, 34));
-//        } else {
-//            bg->setBackGroundColor(Color3B(39, 40, 10));
-//        }
-     
-        Text * labName = (Text*)Helper::seekWidgetByTag(bg, 2);
-        Text * labTime = (Text*)Helper::seekWidgetByTag(bg, 3);
-        
+        Layout *cell = (Layout*)layout->clone();
+
+        Text * labName = (Text*)Helper::seekWidgetByTag(cell, 2);
+        Text * labTime = (Text*)Helper::seekWidgetByTag(cell, 3);
+
         Mission *mission = xMissionPool->_vMissions.at(i);
-        labName->setText(mission->sName);
-        labTime->setText(getShowTime(mission->_scTime));
+        labName->setString(mission->sName);
+        labTime->setString(getShowTime(mission->_scTime));
+
+        listView->pushBackCustomItem(cell);
     }
 }
 

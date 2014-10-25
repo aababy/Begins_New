@@ -33,25 +33,16 @@ bool NewScene::init()
 {
     if (CCLayer::init())
     {
-        _uiLayer = Layer::create();
-        addChild(_uiLayer);
-        
-        _widget = dynamic_cast<Layout*>(cocostudio::GUIReader::getInstance()->widgetFromJsonFile("Scenes/NewScene.ExportJson"));
-        _uiLayer->addChild(_widget);
-        
-        auto screenSize = CCDirector::getInstance()->getWinSize();
-        auto rootSize = _widget->getSize();
-        _uiLayer->setPosition(Point((screenSize.width - rootSize.width) / 2,
-                                    (screenSize.height - rootSize.height) / 2));
-        
-        missionNameTxt = static_cast<TextField*>(_widget->getChildByTag(MISSION_NAME));
-        remindTimeTxt = static_cast<TextField*>(_widget->getChildByTag(REMIND_TIME));
-        closeTimeTxt = static_cast<TextField*>(_widget->getChildByTag(CLOSE_TIME));
-        scoreTxt = static_cast<TextField*>(_widget->getChildByTag(SCORE));
+        _widget = initRoot("R/NewScene.json", this);
 
-        noraml = static_cast<CheckBox*>(_widget->getChildByTag(CHECK_NORMAL));
+        missionNameTxt = (TextField*)Helper::seekWidgetByTag(_widget, MISSION_NAME);
+        remindTimeTxt = (TextField*)Helper::seekWidgetByTag(_widget, REMIND_TIME);
+        closeTimeTxt = (TextField*)Helper::seekWidgetByTag(_widget, CLOSE_TIME);
+        scoreTxt = (TextField*)Helper::seekWidgetByTag(_widget, SCORE);
+
+        noraml = (CheckBox*)Helper::seekWidgetByTag(_widget, CHECK_NORMAL);
         noraml->setSelectedState(true);
-        daily = static_cast<CheckBox*>(_widget->getChildByTag(CHECK_DAILY));
+        daily = (CheckBox*)Helper::seekWidgetByTag(_widget, CHECK_DAILY);
         
         return true;
     }

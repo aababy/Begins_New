@@ -86,6 +86,7 @@
 		E404BCCF19FB4838003D3133 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCC119FB4838003D3133 /* User.cpp */; };
 		E404BCD019FB4838003D3133 /* XmlData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCC319FB4838003D3133 /* XmlData.cpp */; };
 		E404BCD219FB4881003D3133 /* Clock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E404BCD119FB4881003D3133 /* Clock.cpp */; };
+		E40AF45C19FB715300D8F79E /* R in Resources */ = {isa = PBXBuildFile; fileRef = E40AF45B19FB715300D8F79E /* R */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -321,6 +322,7 @@
 		E404BCC319FB4838003D3133 /* XmlData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XmlData.cpp; path = ../Classes/XmlData.cpp; sourceTree = "<group>"; };
 		E404BCC419FB4838003D3133 /* XmlData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XmlData.h; path = ../Classes/XmlData.h; sourceTree = "<group>"; };
 		E404BCD119FB4881003D3133 /* Clock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Clock.cpp; path = ios/Clock.cpp; sourceTree = SOURCE_ROOT; };
+		E40AF45B19FB715300D8F79E /* R */ = {isa = PBXFileReference; lastKnownFileType = folder; path = R; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -546,6 +548,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E40AF45B19FB715300D8F79E /* R */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
 				1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */,
 				1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */,
@@ -735,6 +738,7 @@
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
+				E40AF45C19FB715300D8F79E /* R in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				50EF629717ECD46A001EB2F8 /* Icon-58.png in Resources */,
 			);

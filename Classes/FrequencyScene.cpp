@@ -28,7 +28,7 @@ bool FrequencyScene::init()
 {
     if (CCLayer::init())
     {
-        _widget = initRoot("Scenes/FrequencyScene.ExportJson", this);
+        _widget = initRoot("R/FrequencyScene.json", this);
 
         Mission *mission = xMissionPool->_vMissions.at(xMissionPool->_iTodayIdx);
         

@@ -35,7 +35,7 @@ bool DetailScene::init()
 {
     if (CCLayer::init())
     {
-        _widget = initRoot("Scenes/DetailScene.ExportJson", this);
+        _widget = initRoot("R/DetailScene.json", this);
 
         btnOK = initButton(OK, _widget, CC_CALLBACK_2(DetailScene::onButton, this));
         btnCancel = initButton(CANCEL, _widget, CC_CALLBACK_2(DetailScene::onButton, this));

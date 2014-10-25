@@ -6,6 +6,7 @@ Button * initButton(int iTag, Widget* root, Widget::ccWidgetTouchCallback callba
 ImageView * initImageView(int iTag, Widget* root);
 CheckBox * initCheckBox(int iTag, Widget* root, const CheckBox::ccCheckBoxCallback& callback);
 Layout * initRoot(const std::string& filename, Layer *layer);
+Layout * initRootForCell(const std::string& filename, Layer *layer);
 Layout * initLayout(int iTag, Widget* root, Widget::ccWidgetTouchCallback callback);
 
 string itostr(int i);

@@ -1,0 +1,233 @@
+{
+  "version": "1.0.0.0",
+  "designWidth": 480,
+  "designHeight": 800,
+  "dataScale": 1.0,
+  "textures": [],
+  "texturesPng": [
+    "button_normal.png",
+    "button_down.png",
+    "button_disable.png"
+  ],
+  "nodeTree": {
+    "options": {
+      "$type": "EditorCommon.JsonModel.Component.GUI.RootGUISurrogate, EditorCommon",
+      "visible": true,
+      "frameEvent": null,
+      "name": "Node",
+      "classname": "Node"
+    },
+    "children": [
+      {
+        "options": {
+          "$type": "EditorCommon.JsonModel.Component.GUI.PanelSurrogate, EditorCommon",
+          "bgColorOpacity": 0,
+          "touchAble": true,
+          "visible": true,
+          "classType": "Panel",
+          "width": 480.0,
+          "height": 800.0,
+          "sizePercentX": 1.0,
+          "sizePercentY": 5.0,
+          "actionTag": -1,
+          "tag": 30,
+          "anchorPointX": 0.0,
+          "anchorPointY": 0.0,
+          "name": "Panel_5",
+          "classname": "Panel"
+        },
+        "children": [
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.ButtonSurrogate, EditorCommon",
+              "normalData": {
+                "resourceType": 0,
+                "path": "button_normal.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 0,
+                "path": "button_down.png",
+                "plistFile": ""
+              },
+              "disabledData": {
+                "resourceType": 0,
+                "path": "button_disable.png",
+                "plistFile": ""
+              },
+              "text": "确定",
+              "fontSize": 30,
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 80.0,
+              "scale9Height": 45.0,
+              "x": 73.0,
+              "y": 674.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 80.0,
+              "height": 45.0,
+              "positionPercentX": 0.152083337,
+              "positionPercentY": 0.8425,
+              "sizePercentX": 0.214583337,
+              "sizePercentY": 0.05,
+              "actionTag": 3,
+              "tag": 33,
+              "ignoreSize": true,
+              "name": "Button_1_1",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.ButtonSurrogate, EditorCommon",
+              "normalData": {
+                "resourceType": 0,
+                "path": "button_normal.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 0,
+                "path": "button_down.png",
+                "plistFile": ""
+              },
+              "disabledData": {
+                "resourceType": 0,
+                "path": "button_disable.png",
+                "plistFile": ""
+              },
+              "text": "频率",
+              "fontSize": 30,
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 80.0,
+              "scale9Height": 45.0,
+              "x": 73.0,
+              "y": 591.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 80.0,
+              "height": 45.0,
+              "positionPercentX": 0.152083337,
+              "positionPercentY": 0.73875,
+              "sizePercentX": 0.214583337,
+              "sizePercentY": 0.05,
+              "actionTag": 4,
+              "tag": 34,
+              "ignoreSize": true,
+              "name": "Button_1_0_0",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.ButtonSurrogate, EditorCommon",
+              "normalData": {
+                "resourceType": 0,
+                "path": "button_normal.png",
+                "plistFile": ""
+              },
+              "pressedData": {
+                "resourceType": 0,
+                "path": "button_down.png",
+                "plistFile": ""
+              },
+              "disabledData": {
+                "resourceType": 0,
+                "path": "button_disable.png",
+                "plistFile": ""
+              },
+              "text": "取消",
+              "fontSize": 30,
+              "capInsetsWidth": 1.0,
+              "capInsetsHeight": 1.0,
+              "scale9Width": 80.0,
+              "scale9Height": 45.0,
+              "x": 196.0,
+              "y": 674.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "Button",
+              "width": 80.0,
+              "height": 45.0,
+              "positionPercentX": 0.408333331,
+              "positionPercentY": 0.8425,
+              "sizePercentX": 0.214583337,
+              "sizePercentY": 0.05,
+              "actionTag": 6,
+              "tag": 36,
+              "ignoreSize": true,
+              "name": "Button_1_0_0_1",
+              "classname": "Button"
+            },
+            "children": [],
+            "classname": "Button"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.TextFieldSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "",
+              "placeHolder": "任务细节",
+              "x": 240.0,
+              "y": 471.0,
+              "touchAble": true,
+              "visible": true,
+              "classType": "TextField",
+              "width": 120.0,
+              "height": 49.0,
+              "positionPercentX": 0.5,
+              "positionPercentY": 0.58875,
+              "sizePercentX": 0.185416669,
+              "sizePercentY": 0.04,
+              "actionTag": 74,
+              "tag": 111,
+              "ignoreSize": true,
+              "name": "TextField_3_0",
+              "classname": "TextField"
+            },
+            "children": [],
+            "classname": "TextField"
+          },
+          {
+            "options": {
+              "$type": "EditorCommon.JsonModel.Component.GUI.LabelSurrogate, EditorCommon",
+              "fontSize": 30,
+              "text": "任务名称",
+              "hAlignment": 1,
+              "x": 240.0,
+              "y": 757.0,
+              "visible": true,
+              "classType": "Label",
+              "width": 120.0,
+              "height": 49.0,
+              "positionPercentX": 0.5,
+              "positionPercentY": 0.94625,
+              "sizePercentX": 0.19583334,
+              "sizePercentY": 0.04,
+              "actionTag": 83,
+              "tag": 120,
+              "ignoreSize": true,
+              "name": "Label_4_0",
+              "classname": "Label"
+            },
+            "children": [],
+            "classname": "Label"
+          }
+        ],
+        "classname": "Panel"
+      }
+    ],
+    "classname": "Node"
+  },
+  "action": {
+    "speed": 1.0,
+    "timelines": []
+  }
+}
