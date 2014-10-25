@@ -11,24 +11,25 @@ LOCAL_MODULE := cocos2dcpp_shared
 LOCAL_MODULE_FILENAME := libcocos2dcpp
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
+hellocpp/Clock.cpp \
 ../../Classes/AppDelegate.cpp \
 ../../Classes/HelloWorldScene.cpp \
 ../../Classes/Database.cpp \
 ../../Classes/sqlite3.c \
 ../../Classes/Tool.cpp \
-../../TodayScene.cpp \
-../../XmlData.cpp \
-../../User.cpp \
-../../SceneManager.cpp \
-../../NewScene.cpp \
-../../MTNotificationQueue.cpp \
-../../MissionPool.cpp \
-../../Mission.cpp \
-../../Log.cpp \
-../../GestureLayer.cpp \
-../../FrequencyScene.cpp \
-../../Dialog.cpp \
-../../DetailScene.cpp
+../../Classes/TodayScene.cpp \
+../../Classes/XmlData.cpp \
+../../Classes/User.cpp \
+../../Classes/SceneManager.cpp \
+../../Classes/NewScene.cpp \
+../../Classes/MTNotificationQueue.cpp \
+../../Classes/MissionPool.cpp \
+../../Classes/Mission.cpp \
+../../Classes/Log.cpp \
+../../Classes/GestureLayer.cpp \
+../../Classes/FrequencyScene.cpp \
+../../Classes/Dialog.cpp \
+../../Classes/DetailScene.cpp
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 
