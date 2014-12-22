@@ -155,7 +155,14 @@ void MissionPool::endMission(int idx, ACTION_BY eAction)
 		//1. 计算得分
 		_db->updateScore(miss->_iScore * -1);
 	}
-
+    else if (eAction == BY_FORCE)
+    {
+        miss = _vMissions.at(idx);
+        
+        //1. 计算得分
+        _db->updateScore(miss->_iScore * -1);
+    }
+    
 	//2. 插入end
 	_db->insertMission(miss, "end");
 
@@ -189,4 +196,37 @@ void MissionPool::endMission(int idx, ACTION_BY eAction)
 void MissionPool::removeMission(Mission *miss)
 {
     _db->deleteMission(miss->iMissionID);
+}
+
+void MissionPool::delay(int idx)
+{
+    Mission *miss = _vMissions.at(idx);
+    
+    //1. 更新mission
+    if (miss->eType == MISSION_NORMAL)
+    {
+        _db->updateRemindTime(miss, 1);
+        _db->updateExpireTime(miss, 1);
+    }
+    else if(miss->eType == MISSION_DAILY)
+    {
+        //获得今天是星期几
+        int iWeekdayOfNext = _db->getWeekday(miss->_scTime.str);        //0表示星期天, 让0表示星期一, 所以得到的就是明天的值
+        
+        //查找离自己最近的一个有提醒的星期
+        int iDiffer = 1;
+        for (int i = 0; i < 7; i++) {
+            if (miss->bFrequency[iWeekdayOfNext] == true) {
+                break;
+            }
+            else
+            {
+                cycleNum(true, 7, &iWeekdayOfNext);
+                iDiffer++;
+            }
+        }
+        
+        _db->updateRemindTime(miss, iDiffer);
+        _db->updateExpireTime(miss, iDiffer);
+    }
 }

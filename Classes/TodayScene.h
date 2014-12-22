@@ -22,4 +22,5 @@ protected:
 protected:
     Layout* _widget;
     ListView* listView;
+    Text* _score;
 };

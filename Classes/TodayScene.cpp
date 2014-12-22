@@ -35,12 +35,13 @@ bool TodayScene::init()
     {
         _widget = initRoot("R/TodayScene.json", this);
         
-        Text* score = (Text*)Helper::seekWidgetByTag(_widget, kScore);
+        _score = (Text*)Helper::seekWidgetByTag(_widget, kScore);
         
         xMissionPool->getMission();
-        score->setString(itostr(xMissionPool->getScore()));
+        _score->setString(itostr(xMissionPool->getScore()));
 
-        initButton(kStart, _widget, CC_CALLBACK_2(TodayScene::onButton, this));
+        Button * btn = initButton(kStart, _widget, CC_CALLBACK_2(TodayScene::onButton, this));
+        btn->setVisible(false);
         initButton(kCheckAll, _widget, CC_CALLBACK_2(TodayScene::onButton, this));
         
         //列表
@@ -66,7 +67,7 @@ void TodayScene::updateList(Ref *pSender)
 {
     listView->removeAllItems();
 
-    Layout *layout = initRootForCell("R/TodayScene.json", this);
+    Layout *layout = initRootForCell("R/ListCell.json", this);
 
     // add default item
     for (int i = 0; i < xMissionPool->_vMissions.size(); ++i)
@@ -90,8 +91,6 @@ void TodayScene::onButton(Ref *pSender, Widget::TouchEventType type)
     
     int iTag = ((Widget*)pSender)->getTag();
     
-    xClock->startTiming();
-    
     switch (iTag) {
         case kStart:
         {
@@ -101,6 +100,9 @@ void TodayScene::onButton(Ref *pSender, Widget::TouchEventType type)
         {
             xMissionPool->checkRemind();
             xMissionPool->handleExpire();
+            
+            updateList(NULL);
+            _score->setString(itostr(xMissionPool->getScore()));
         }
             break;
         default:

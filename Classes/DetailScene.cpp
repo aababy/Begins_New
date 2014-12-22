@@ -5,9 +5,11 @@
 enum UITag {
     OK = 33,
     FREQUENCY = 34,
-    CANCEL = 36,
+    CANCEL = 186,
     MISSION_DETAIL = 111,
     MISSION_NAME = 120,
+    UNFINISHED = 187,
+    DELAY = 188,
 };
 
 
@@ -40,6 +42,8 @@ bool DetailScene::init()
         btnOK = initButton(OK, _widget, CC_CALLBACK_2(DetailScene::onButton, this));
         btnCancel = initButton(CANCEL, _widget, CC_CALLBACK_2(DetailScene::onButton, this));
         btnFrequency = initButton(FREQUENCY, _widget, CC_CALLBACK_2(DetailScene::onButton, this));
+        initButton(UNFINISHED, _widget, CC_CALLBACK_2(DetailScene::onButton, this));
+        initButton(DELAY, _widget, CC_CALLBACK_2(DetailScene::onButton, this));
         txtMissionDetail = (TextField*)Helper::seekWidgetByTag(_widget, MISSION_DETAIL);
         txtMissionName = (Text*)Helper::seekWidgetByTag(_widget, MISSION_NAME);
 
@@ -76,6 +80,16 @@ void DetailScene::onButton(Ref *pSender, Widget::TouchEventType type)
         case FREQUENCY:
         {
             xSM->forward(SCENE_FREQUENCY);
+        }
+            break;
+        case DELAY:
+        {
+            xMissionPool->delay(xMissionPool->_iTodayIdx);
+        }
+            break;
+        case UNFINISHED:
+        {
+            xMissionPool->endMission(xMissionPool->_iTodayIdx, BY_FORCE);
         }
             break;
         default:

@@ -13,6 +13,7 @@ enum ACTION_BY
 {
 	BY_MANUAL		= 0,
 	BY_EXPIRE,
+    BY_FORCE,       //强制结束
 };
 
 class MissionPool
@@ -29,6 +30,7 @@ public:
 	void updateRemind();
 	void endMission(int idx, ACTION_BY eAction);
     void removeMission(Mission *miss);
+    void delay(int idx);
 	int _iTodayIdx;
 	vector <Mission *> _vMissions;		//这个vector通常有很多条
 	vector <Mission *> _vReminds;		//这个通常只有几条
