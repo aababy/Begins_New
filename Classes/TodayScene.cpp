@@ -6,6 +6,7 @@ enum UITag {
     kScore = 3,
     kList,
     kStart = 138,
+    kCheckAll = 189,
     kMax,
 };
 
@@ -40,6 +41,7 @@ bool TodayScene::init()
         score->setString(itostr(xMissionPool->getScore()));
 
         initButton(kStart, _widget, CC_CALLBACK_2(TodayScene::onButton, this));
+        initButton(kCheckAll, _widget, CC_CALLBACK_2(TodayScene::onButton, this));
         
         //列表
         listView = (ListView*)Helper::seekWidgetByTag(_widget, kList);
@@ -84,10 +86,27 @@ void TodayScene::updateList(Ref *pSender)
 
 void TodayScene::onButton(Ref *pSender, Widget::TouchEventType type)
 {
-    if(type != Widget::TouchEventType::ENDED)
-    {
-        xClock->startTiming();
+    if(type != Widget::TouchEventType::ENDED) return;
+    
+    int iTag = ((Widget*)pSender)->getTag();
+    
+    xClock->startTiming();
+    
+    switch (iTag) {
+        case kStart:
+        {
+        }
+            break;
+        case kCheckAll:
+        {
+            xMissionPool->checkRemind();
+            xMissionPool->handleExpire();
+        }
+            break;
+        default:
+            break;
     }
+    
 }
 
 void TodayScene::selectedItemEvent(Ref *pSender, ListViewEventType type)
